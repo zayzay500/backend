@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :proposals, only: [:index, :show]
+      resources :notes, only: [:index, :show]
     end
   end
 end
